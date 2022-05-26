@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostelNaUOA", "HostelNaUOA.csproj", "{2F68C260-98E2-4EA5-B9D4-53CDEDCA0D55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostelNaUOA.Core", "..\HostelNaUOA.Core\HostelNaUOA.Core.csproj", "{B587A39B-DE00-4E4A-9EFD-C009456A7CBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F68C260-98E2-4EA5-B9D4-53CDEDCA0D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F68C260-98E2-4EA5-B9D4-53CDEDCA0D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F68C260-98E2-4EA5-B9D4-53CDEDCA0D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F68C260-98E2-4EA5-B9D4-53CDEDCA0D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B587A39B-DE00-4E4A-9EFD-C009456A7CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B587A39B-DE00-4E4A-9EFD-C009456A7CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B587A39B-DE00-4E4A-9EFD-C009456A7CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B587A39B-DE00-4E4A-9EFD-C009456A7CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2273AD43-2B2E-4B77-AB1E-736B842E2C7E}
+	EndGlobalSection
+EndGlobal
