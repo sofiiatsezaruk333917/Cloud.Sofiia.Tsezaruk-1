@@ -12,6 +12,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using HostelNaUOA.Core.Models;
 
 namespace HostelNaUOA
 {
@@ -27,6 +30,12 @@ namespace HostelNaUOA
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IValidator<Hostel>, HostelValidator>();
+            services.AddControllersWithViews().AddFluentValidation();
+            services.AddMvc(setup =>
+            {
+                //...mvc setup...
+            }).AddFluentValidation();
             services.AddSingleton<IDbClient, DbClient>();
             services.Configure<HostelDbConfig>(Configuration);
             services.AddTransient<IHostelServices, HostelServices>();
@@ -60,5 +69,6 @@ namespace HostelNaUOA
                 endpoints.MapControllers();
             });
         }
+       
     }
 }
